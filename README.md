@@ -1,11 +1,14 @@
-# printf
+# _printf
 ##### Repository for printf function, also this is the first peer proyect from Holberton School.
 
 This directory contains the files for the __printf_ project. You will find a header file, different functions in their own files, a man page for this function and this README.md.
 
 ##### How to use:
 You need to include the holberton.h header file.
-Syntaxis comes on this way:
+Prototype: int _printf(const char *format, ...);
+Syntaxis comes on this way: 
+
+_printf("control-string", argument-list);
 
 It is possible to print text directly, just typing it on the control string.
 Our customized function can receive the following set of format specifiers:
@@ -17,6 +20,12 @@ Format specifier | Operation
 %d | Prints the value of an type integer floating argument.
 %s | Prints the value of an *char argument.
 
+##### Example:
+_printf("This is a char: %c, This is a string: %s", 'A', "Example");
+
+And the output is going to be:
+
+$ This is a char: A, This is a string: Example
 
 Filename | Description
 -------- | ----------
@@ -25,8 +34,7 @@ _printf.c | Our most important function.
 _putchar.c | Function that allows to print a character.
 holberton.h | Our header file
 man_3_printf | Our man page for the _printf function
-percent.c | Function that contains the flow if a '%' is found in iteration proc\
-esses.
+percent.c | Function that contains the flow if a '%' is found.
 print_ch.c |Function to print a char
 print_id.c |Function to print an integer given the parameters %i or %d
 print_s.c |Function that allows to print a string._printf("control-string", argument-list);
