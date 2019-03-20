@@ -40,8 +40,7 @@ int _printf(const char *format, ...)
 			j++;
 			if (pf_func[j].cons == NULL)
 			{ y += _putchar(format[i - 1]);
-				y += _putchar(format[i]);
-			}
+				y += _putchar(format[i]); }
 		}
 		i++;
 	}
