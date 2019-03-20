@@ -1,0 +1,42 @@
+.Th _printf
+.Dd 3/19/2019               \" DATE
+.Dt _printf
+.Os _printf
+.Sh NAME
+.Nm _printf
+.Sh SYNOPSIS
+#include "holberton.h"
+.Nm  _printf("control string", "argument -list");
+.Sh DESCRIPTION
+This customized version of the function printf -from the standard input/output library <stdio.h> - was created after building someprints on the command line a specified argument into formatted standard output.
+.Pp
+.R
+ With our version of _printf it is possible to print unformatted text directly or print variable values using format specifiers which matches variable types.
+.El
+.br
+.Sh RETURN
+If sucessful, it will return 0.
+.Sh OPTIONS
+.Nm
+handles a set of format specifiers and naturally special characters. There is a partial list:
+.br
+
+.Nm Format specifiers:
+.Bl -tag -width -indent
+.It %c
+Prints the value of a char variable.
+.It %i
+Prints the value of an integer.
+.It %s
+Prints a string.
+.It %f
+Prints a value which contains decimals.
+.It %u
+Prints a value of an unsigned integer.
+.El
+.Pp
+.Sh SEE ALSO
+ _putchar;
+.Pp
+.Sh AUTHOR
+_printf and the man page of this function were created by Paula Gutierrez and Lucia Rodriguez.
