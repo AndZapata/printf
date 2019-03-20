@@ -1,6 +1,6 @@
 .Th _printf
 .Dd 3/19/2019               \" DATE
-.Dt _printf
+.Dt _printf 3
 .Os _printf
 .Sh NAME
 .Nm _printf
@@ -20,7 +20,6 @@ If sucessful, it will return 0.
 .Nm
 handles a set of format specifiers and naturally special characters. There is a partial list:
 .br
-
 .Nm Format specifiers:
 .Bl -tag -width -indent
 .It %c
@@ -35,8 +34,30 @@ Prints a value which contains decimals.
 Prints a value of an unsigned integer.
 .El
 .Pp
+.br
+.Sh FILES
+.Bl -tag -width -indent
+.It README.md
+General description of the repository
+.It _printf.c
+Our most important function.
+.It _putchar.c
+Function that allows to print a character.
+.It holberton.h
+Our header file
+.It man_3_printf
+Our man page for the _printf function
+.It percent.c
+Function that contains the flow if a '%' is found in iteration processes.
+.It print_ch.c
+Function to print a char
+.It print_id.c
+Function to print an integer given the parameters %i or %d
+.It print_s.c
+Function that allows to print a string.
+.Pp
 .Sh SEE ALSO
- _putchar;
+ putchar;
 .Pp
 .Sh AUTHOR
 _printf and the man page of this function were created by Paula Gutierrez and Lucia Rodriguez.
