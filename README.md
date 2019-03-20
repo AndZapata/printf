@@ -5,8 +5,8 @@ This directory contains the files for the __printf_ project. You will find a hea
 
 ##### How to use:
 You need to include the holberton.h header file.
-Prototype: int _printf(const char *format, ...);
-Syntaxis comes on this way: 
+### Prototype: int _printf(const char *format, ...);
+### Syntaxis comes on this way: 
 
 _printf("control-string", argument-list);
 
